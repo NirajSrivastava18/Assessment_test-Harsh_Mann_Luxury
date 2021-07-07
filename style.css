@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Raleway:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  background-color: black;
+}
+
+.header {
+  padding: 0 3rem;
+  height: 131px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+  width: 91%;
+  padding: 0 6rem;
+  z-index: 100;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+}
+
+.nav__logo {
+  height: 5.5rem;
+  transition: all 0.3s;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 4rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+.nav__item__border {
+  margin-left: 4rem;
+  border: 5px;
+  border-color: white;
+}
+.nav__link__border:link,
+.nav__link__border:visited {
+  font-size: 20px;
+  font-weight: 400;
+  border: white 3px solid;
+  padding: 25px;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+a {
+  color: white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  display: block;
+
+  transition: all 0.3s; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(131, 128, 128, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  font-family: Roboto, sans-serif;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: rgb(75, 70, 70);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.show {
+  opacity: 0.4;
+}
+
+.transition {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.section__about {
+  padding: 20rem;
+  width: 879px;
+  background-color: #e5e5e5;
+}
+/* .section--hidden {
+  opacity: 0;
+  transform: translateY(10rem);
+} */
+
+.section__heading {
+  position: absolute;
+  width: 0px;
+  height: 135px;
+  left: 566px;
+  top: 750px;
+
+  font-family: "Cinzel", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 134px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+.section__subheading {
+  position: absolute;
+  width: 0px;
+  height: 164px;
+  left: 745px;
+  top: 830px;
+
+  font-family: MoonTime;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 120px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.section__description {
+  position: absolute;
+  width: 731px;
+  height: 0px;
+  left: 376px;
+  top: 960px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #000000;
+}
+.image_section_img {
+  position: absolute;
+  width: 1518px;
+  height: 807px;
+  left: 0px;
+  top: 1203px;
+  object-fit: cover;
+}
+.p {
+  position: absolute;
+  width: 143px;
+  height: 61px;
+  left: 670px;
+  top: 1909px;
+  background-color: #e5e5e5;
+  text-decoration: none;
+  justify-content: space-between;
+
+  font-family: Larken-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 63px;
+  text-align: center;
+
+  color: #000000;
+}
+.section_founder {
+  padding: 20rem;
+  background-color: #e5e5e5;
+  height: 1330px;
+}
+.section_founder_img {
+  position: absolute;
+  width: 492px;
+  height: 735px;
+  left: -2px;
+  top: 2010px;
+}
+
+.section_founder_heading {
+  position: absolute;
+  width: 0px;
+  height: 135px;
+  left: 800px;
+  top: 2100px;
+
+  font-family: Cinzel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 134px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+.section_founder_subheading {
+  position: absolute;
+  width: 0px;
+  height: 164px;
+  left: 991px;
+  top: 2185px;
+
+  font-family: MoonTime;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 120px;
+  text-align: center;
+
+  color: #000000;
+}
+.section_founder_description {
+  position: absolute;
+  width: 565px;
+  height: 0px;
+  left: 730px;
+  top: 2329px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: justify;
+
+  color: #000000;
+}
